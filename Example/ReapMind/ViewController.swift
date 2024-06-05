@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import ReapMind
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        var log = ReapmindLoggerData()
+        log.printLog()
+        log.privateMethod()
     }
 
     override func didReceiveMemoryWarning() {
